@@ -15,6 +15,14 @@ config/description="Rubber Chart Editor."
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+UserSettings="*res://addons/PukiTools.GodotSharp/UserSettingsInstance.cs"
+Conductor="*res://addons/Rubicon.Core/source/ConductorInstance.cs"
+ScreenManager="*res://addons/PukiTools.GodotSharp/Screens/ScreenManagerInstance.cs"
+AudioManager="*res://addons/PukiTools.GodotSharp/Audio/AudioManagerInstance.cs"
+RubiconCore="*res://addons/Rubicon.Core/source/RubiconCoreInstance.cs"
+
 [dotnet]
 
 project/assembly_name="Rubber"

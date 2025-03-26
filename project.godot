@@ -18,3 +18,7 @@ config/icon="res://icon.svg"
 [dotnet]
 
 project/assembly_name="Rubber"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/PukiTools.GodotSharp/plugin.cfg")

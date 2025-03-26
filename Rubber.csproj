@@ -1,12 +1,13 @@
-<Project Sdk="Godot.NET.Sdk/4.4.0-dev.5">
+<Project Sdk="Godot.NET.Sdk/4.4.0">
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net7.0</TargetFramework>
-    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'ios' ">net8.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Folder Include="Assets\" />
-  </ItemGroup>
+	<ItemGroup Label="PukiTools.GodotSharp">
+		<ProjectReference Include="addons\PukiTools.GodotSharp\PukiTools.GodotSharp.SourceGenerators\PukiTools.GodotSharp.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+		<EmbeddedResource Remove="addons\PukiTools.GodotSharp\PukiTools.GodotSharp.SourceGenerators\**" />
+		<Compile Remove="addons\PukiTools.GodotSharp\PukiTools.GodotSharp.SourceGenerators\**" />
+		<Compile Remove="addons\PukiTools.GodotSharp\UserSettingsData.cs" />
+	</ItemGroup>
 </Project>

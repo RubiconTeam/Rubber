@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2yy8uksej406"]
+
+[ext_resource type="Script" uid="uid://bg6tf6i3woix" path="res://addons/rubber_charter/Editor.gd" id="1_rjg75"]
+[ext_resource type="PackedScene" uid="uid://0dvmbhrkik8g" path="res://addons/rubber_charter/rulesets/mania/Mania.tscn" id="2_me28b"]
+[ext_resource type="Resource" uid="uid://5fiv3wet0boj" path="res://songs/test/data/Meta.tres" id="3_47wm0"]
+
+[node name="Editor" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rjg75")
+rulesets = Dictionary[String, PackedScene]({
+"Mania": ExtResource("2_me28b")
+})
+meta = ExtResource("3_47wm0")
+
+[node name="Song" type="AudioStreamPlayer" parent="."]

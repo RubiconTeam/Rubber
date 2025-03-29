@@ -35,7 +35,7 @@ naming/script_name_casing=1
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/PukiTools.GodotSharp/plugin.cfg")
+enabled=PackedStringArray("res://addons/PukiTools.GodotSharp/plugin.cfg", "res://addons/Rubicon.Core.Rulesets.Mania/plugin.cfg", "res://addons/Rubicon.Core/plugin.cfg")
 
 [rubber]
 

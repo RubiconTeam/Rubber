@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://5wvs60ywhok0"]
 
-[ext_resource type="Script" uid="uid://r4xyoahfe1o7" path="res://addons/rubber_charter/rulesets/mania/EditorManiaBarLine.gd" id="1_lwmpv"]
+[ext_resource type="Script" uid="uid://r4xyoahfe1o7" path="res://addons/rubber_charter/rulesets/mania/classes/EditorManiaBarLine.gd" id="1_lwmpv"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8fvq7"]
 
@@ -13,7 +13,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lwmpv")
-note_container = NodePath("TextureRect")
+note_directions = PackedStringArray("left", "down", "up", "right")
+note_container = NodePath("NoteContainer")
 bar_line_label = NodePath("Panel/Label")
 
 [node name="Panel" type="Panel" parent="."]
@@ -41,7 +42,7 @@ text = "Bar Line Name"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="NoteContainer" type="TextureRect" parent="."]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1

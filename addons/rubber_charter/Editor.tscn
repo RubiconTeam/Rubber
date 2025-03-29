@@ -5,12 +5,14 @@
 [ext_resource type="Resource" uid="uid://5fiv3wet0boj" path="res://songs/test/data/Meta.tres" id="3_47wm0"]
 
 [node name="Editor" type="Control"]
+custom_minimum_size = Vector2(0, 63.07)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_rjg75")
 rulesets = Dictionary[String, PackedScene]({
 "Mania": ExtResource("2_me28b")

@@ -7,3 +7,6 @@
 [submodule "addons/Rubicon.Core.Rulesets.Mania"]
 	path = addons/Rubicon.Core.Rulesets.Mania
 	url = https://github.com/RubiconTeam/Rubicon.Core.Rulesets.Mania.git
+[submodule "addons/rubber_charter"]
+	path = addons/rubber_charter
+	url = https://github.com/RubiconTeam/rubber_charter.git

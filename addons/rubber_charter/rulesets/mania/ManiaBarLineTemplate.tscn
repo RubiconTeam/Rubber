@@ -6,8 +6,8 @@
 
 [node name="ManiaBarLineTemplate" type="Control" node_paths=PackedStringArray("note_container", "bar_line_label")]
 layout_mode = 3
-anchors_preset = 13
 anchor_left = 0.5
+anchor_top = 0.05
 anchor_right = 0.5
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -23,7 +23,6 @@ layout_mode = 2
 anchor_right = 1.0
 anchor_bottom = 0.037037
 size_flags_vertical = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="Panel"]
 layout_mode = 1
@@ -51,4 +50,3 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_vertical = 3
 texture = SubResource("PlaceholderTexture2D_8fvq7")
-metadata/_edit_use_anchors_ = true
